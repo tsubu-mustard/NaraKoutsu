@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:background="#FFFFFFFF">
+    <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="wrap_content">
+        <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/linearLayout2" android:orientation="vertical">
+            <TableLayout android:layout_width="fill_parent" android:id="@+id/tableLayout1" android:stretchColumns="0" android:layout_height="wrap_content" android:shrinkColumns="1">
+                <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
+                    <EditText android:layout_height="wrap_content" android:id="@+id/etFrom" android:maxLines="1" android:lines="1" android:hint="乗車地" android:layout_width="0dp" android:layout_weight="1" android:scrollHorizontally="true">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                    <Button android:layout_height="wrap_content" android:text="検索" android:layout_width="wrap_content" android:id="@+id/btFrom"></Button>
+                </TableRow>
+                <TableRow android:id="@+id/tableRow2" android:layout_height="wrap_content" android:layout_width="wrap_content">
+                    <EditText android:layout_height="wrap_content" android:id="@+id/etTo" android:maxLines="1" android:lines="1" android:hint="降車地" android:layout_weight="1" android:layout_width="0dp" android:scrollHorizontally="true"></EditText>
+                    <Button android:layout_height="wrap_content" android:text="検索" android:layout_width="wrap_content" android:id="@+id/btTo"></Button>
+                </TableRow>
+            </TableLayout>
+            <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rgDayKind">
+                <RadioButton android:checked="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rNormal" android:textColor="#ff000000" android:text="平日"></RadioButton>
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rSat" android:textColor="#ff000000" android:text="土曜日"></RadioButton>
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rSun" android:textColor="#ff000000" android:text="日曜日・祝日"></RadioButton>
+            </RadioGroup>
+            <Button android:id="@+id/btTimeTable" android:text="時刻表を表示" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

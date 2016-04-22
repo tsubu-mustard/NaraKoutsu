@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, NaraKoutsuActivity!</string>
+    <string name="app_name">奈良交通</string>
+    <string name="search_label">停留所検索</string>
+    <string name="search_hint">部分文字列を入力</string>
+
+    <string name="error.network">通信中にエラーが発生しました</string>
+    <string name="error.bus_stop_not_found">停留所がみつかりませんでした</string>
+    <string name="error.bus_stop_same">乗車地と降車地が同じです</string>
+    <string name="error.parse_html">時刻表の取得に失敗しました</string>
+    <string name="error.route_not_found">該当する路線がありません</string>
+    <string-array name="font_size_name_list">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+    <string name="menu.font_size">文字サイズ</string>
+</resources>
